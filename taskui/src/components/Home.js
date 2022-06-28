@@ -73,14 +73,16 @@ export default function Home() {
           <div style={{ height: "100%" }}>
             <Split>
               <div className="div1" style={{ height: "100%", padding: "2em" }}>
-                <h5>Count Of{radioOption === "add" ? " Add:" : " Update:"}</h5>
-                <label for="count">
-                  {radioOption === "add"
-                    ? itemList.length
-                    : itemList.reduce((prevValue, curItem) => {
-                        return prevValue + curItem.totalUpdates;
-                      }, 0)}
-                </label>
+                <h5>
+                  Count Of{radioOption === "add" ? " Add: " : " Update: "}
+                  <label for="count">
+                    {radioOption === "add"
+                      ? itemList.length
+                      : itemList.reduce((prevValue, curItem) => {
+                          return prevValue + curItem.totalUpdates;
+                        }, 0)}
+                  </label>
+                </h5>
                 <form>
                   <input
                     type="radio"

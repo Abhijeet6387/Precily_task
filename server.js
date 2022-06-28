@@ -15,13 +15,13 @@ app.use(
 app.use(bodyParser.json());
 
 app.use("/route", routes);
-// app.use(
-//   "/api",
-//   createProxyMiddleware({
-//     target: "http://localhost:4000",
-//     changeOrigin: true,
-//   })
-// );
+app.use(
+  "/api",
+  createProxyMiddleware({
+    target: "http://localhost:4000",
+    changeOrigin: true,
+  })
+);
 
 app.use(express.static(path.join(__dirname, "taskui", "build")));
 app.get("*", (req, res) => {
