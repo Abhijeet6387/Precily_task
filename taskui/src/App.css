@@ -1,0 +1,38 @@
+.para {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px;
+  text-align: justify;
+  font-size: medium;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.div1,
+.div2,
+.div3 {
+  overflow: auto;
+}
+.center {
+  display: flex;
+  direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.txtarea {
+  width: 100%;
+  padding-top: 0;
+  padding-left: 0;
+  padding: 0 0 150px 0;
+  resize: none;
+  overflow: auto;
+}
+
+.card {
+  height: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
