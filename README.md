@@ -4,7 +4,7 @@ Live At - https://uitaskprecily.herokuapp.com/ <br/>
 The purpose of the repository is to contain the code that has been written in order to complete the task based on MERN Stack.
 
 <b>Key Features </b><br/>
--> It consists of three div layouts.<br/>
+-> It consists of three div responsive layout where there is one horizontal and one vertical split. <strong>react-split-it</strong> package has been used to split the div's.<br/>
 -> All the div's are adjustable in accordance to each other as given in the first task.<br/>
 -> The First div consists two options as radio button : add and update; If a user wishes to add some text to the card in the bottom most div, they can write some text in the description box and click on the <strong>ADD</strong> button.<br/>
 -> The text will be updated in the card below and the Add Count is increased.<br/>
