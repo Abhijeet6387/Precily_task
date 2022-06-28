@@ -12,7 +12,7 @@ export default function Home() {
 
   function fetchData() {
     axios
-      .get("/get")
+      .get("/route/get")
       .then((res) => {
         setItemList(res.data);
         console.log("fetched", res.data);
@@ -51,8 +51,8 @@ export default function Home() {
   const handleSubmit = (e) => {
     e.preventDefault();
     let link;
-    if (radioOption === "add") link = "/add";
-    else link = "/update/" + itemList[selectedInd]._id;
+    if (radioOption === "add") link = "/route/add";
+    else link = "/route/update/" + itemList[selectedInd]._id;
 
     axios
       .post(link, newItem)

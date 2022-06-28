@@ -14,7 +14,7 @@ app.use(
 );
 app.use(bodyParser.json());
 
-app.use("/", routes);
+app.use("/route", routes);
 app.use(
   "/api",
   createProxyMiddleware({
